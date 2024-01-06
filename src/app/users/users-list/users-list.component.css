@@ -1,0 +1,67 @@
+/* Styles for the container holding the data */
+.data-container {
+  font-family: Arial, sans-serif;
+}
+
+.header{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+
+
+/* Styles for the input field */
+.input-field {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+}
+
+/* Styles for the create button */
+.create-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #0056b3;
+}
+}
+
+/* Styles for the table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Styles for table headers */
+.user-table th {
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Styles for table data rows */
+.user-row td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Styles for delete button */
+.delete-button {
+  padding: 6px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}

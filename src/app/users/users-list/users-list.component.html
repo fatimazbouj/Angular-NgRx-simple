@@ -1,0 +1,36 @@
+<ng-container *ngIf="{
+  users: users$ | async,
+  isLoading: isLoading$ | async
+} as data" class="data-container">
+
+<div class="header">
+  <input #inputElement class="input-field" placeholder="Enter User Name">
+  <button (click)="CreateUser(inputElement.value)" class="create-button">Create User</button>
+</div>
+
+<div class="container">
+  <table class="user-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of data.users" class="user-row">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.gender }}</td>
+        <td>{{ user.address }}</td>
+        <td><button (click)="DeleteUser(user)" class="delete-button">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</ng-container>
